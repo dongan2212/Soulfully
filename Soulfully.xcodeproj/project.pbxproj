@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B5DA31067C7C2B63BCC577 /* Pods_Soulfully.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C47A2D69F64A3458C5F456 /* Pods_Soulfully.framework */; };
 		8426EF222793FAB500F18B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF212793FAB500F18B58 /* AppDelegate.swift */; };
 		8426EF262793FAB500F18B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF252793FAB500F18B58 /* ViewController.swift */; };
 		8426EF292793FAB500F18B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426EF272793FAB500F18B58 /* Main.storyboard */; };
@@ -15,6 +16,24 @@
 		8426EF392793FAB600F18B58 /* SoulfullyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF382793FAB600F18B58 /* SoulfullyTests.swift */; };
 		8426EF432793FAB600F18B58 /* SoulfullyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF422793FAB600F18B58 /* SoulfullyUITests.swift */; };
 		8426EF452793FAB600F18B58 /* SoulfullyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF442793FAB600F18B58 /* SoulfullyUITestsLaunchTests.swift */; };
+		8426EF8327941D4100F18B58 /* SoulfullyNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8426EF8227941D4100F18B58 /* SoulfullyNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8426EF8627941D4100F18B58 /* SoulfullyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426EF8027941D4100F18B58 /* SoulfullyNetworking.framework */; };
+		8426EF8727941D4100F18B58 /* SoulfullyNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8426EF8027941D4100F18B58 /* SoulfullyNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8426EF9E27941E4C00F18B58 /* NeoNetworkingLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF8F27941E4C00F18B58 /* NeoNetworkingLogger.swift */; };
+		8426EF9F27941E4C00F18B58 /* APIConfigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9127941E4C00F18B58 /* APIConfigable.swift */; };
+		8426EFA027941E4C00F18B58 /* KSTNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9227941E4C00F18B58 /* KSTNetworkProvider.swift */; };
+		8426EFA127941E4C00F18B58 /* KSTApiInputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9527941E4C00F18B58 /* KSTApiInputable.swift */; };
+		8426EFA227941E4C00F18B58 /* KSTRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9627941E4C00F18B58 /* KSTRequestable.swift */; };
+		8426EFA327941E4C00F18B58 /* Parseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9A27941E4C00F18B58 /* Parseable.swift */; };
+		8426EFA427941E4C00F18B58 /* KSTApiOutputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9B27941E4C00F18B58 /* KSTApiOutputable.swift */; };
+		8426EFA527941E4C00F18B58 /* AlamofireRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */; };
+		8426EFA8279423A400F18B58 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFA7279423A400F18B58 /* Alamofire */; };
+		8426EFAB2794240000F18B58 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFAA2794240000F18B58 /* Kingfisher */; };
+		8426EFAE2794243500F18B58 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFAD2794243500F18B58 /* RxCocoa */; };
+		8426EFB02794243500F18B58 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFAF2794243500F18B58 /* RxRelay */; };
+		8426EFB22794243500F18B58 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB12794243500F18B58 /* RxSwift */; };
+		8426EFB5279424A900F18B58 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB4279424A900F18B58 /* SnapKit */; };
+		8426EFB72794379000F18B58 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB62794379000F18B58 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +51,32 @@
 			remoteGlobalIDString = 8426EF1D2793FAB500F18B58;
 			remoteInfo = Soulfully;
 		};
+		8426EF8427941D4100F18B58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8426EF162793FAB500F18B58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8426EF7F27941D4100F18B58;
+			remoteInfo = SoulfullyNetworking;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8426EF8827941D4100F18B58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8426EF8727941D4100F18B58 /* SoulfullyNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2DB241DEFE020CE902171E19 /* Pods-Soulfully.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soulfully.release.xcconfig"; path = "Target Support Files/Pods-Soulfully/Pods-Soulfully.release.xcconfig"; sourceTree = "<group>"; };
+		44C47A2D69F64A3458C5F456 /* Pods_Soulfully.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soulfully.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426EF1E2793FAB500F18B58 /* Soulfully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soulfully.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426EF212793FAB500F18B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8426EF252793FAB500F18B58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +89,17 @@
 		8426EF3E2793FAB600F18B58 /* SoulfullyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoulfullyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426EF422793FAB600F18B58 /* SoulfullyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulfullyUITests.swift; sourceTree = "<group>"; };
 		8426EF442793FAB600F18B58 /* SoulfullyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulfullyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8426EF8027941D4100F18B58 /* SoulfullyNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoulfullyNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8426EF8227941D4100F18B58 /* SoulfullyNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoulfullyNetworking.h; sourceTree = "<group>"; };
+		8426EF8F27941E4C00F18B58 /* NeoNetworkingLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoNetworkingLogger.swift; sourceTree = "<group>"; };
+		8426EF9127941E4C00F18B58 /* APIConfigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfigable.swift; sourceTree = "<group>"; };
+		8426EF9227941E4C00F18B58 /* KSTNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTNetworkProvider.swift; sourceTree = "<group>"; };
+		8426EF9527941E4C00F18B58 /* KSTApiInputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTApiInputable.swift; sourceTree = "<group>"; };
+		8426EF9627941E4C00F18B58 /* KSTRequestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTRequestable.swift; sourceTree = "<group>"; };
+		8426EF9A27941E4C00F18B58 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
+		8426EF9B27941E4C00F18B58 /* KSTApiOutputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTApiOutputable.swift; sourceTree = "<group>"; };
+		8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRequester.swift; sourceTree = "<group>"; };
+		90AB7529D916E05E88FD482C /* Pods-Soulfully.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soulfully.debug.xcconfig"; path = "Target Support Files/Pods-Soulfully/Pods-Soulfully.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +107,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8426EFB22794243500F18B58 /* RxSwift in Frameworks */,
+				8426EFB02794243500F18B58 /* RxRelay in Frameworks */,
+				8426EFAB2794240000F18B58 /* Kingfisher in Frameworks */,
+				8426EFB5279424A900F18B58 /* SnapKit in Frameworks */,
+				8426EF8627941D4100F18B58 /* SoulfullyNetworking.framework in Frameworks */,
+				8426EFAE2794243500F18B58 /* RxCocoa in Frameworks */,
+				8426EFA8279423A400F18B58 /* Alamofire in Frameworks */,
+				22B5DA31067C7C2B63BCC577 /* Pods_Soulfully.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +132,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8426EF7D27941D4100F18B58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8426EFB72794379000F18B58 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0EF9E6C0ADA6A06D6085D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44C47A2D69F64A3458C5F456 /* Pods_Soulfully.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9C1C065BCBB3E20C3BF677 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90AB7529D916E05E88FD482C /* Pods-Soulfully.debug.xcconfig */,
+				2DB241DEFE020CE902171E19 /* Pods-Soulfully.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8426EF152793FAB500F18B58 = {
 			isa = PBXGroup;
 			children = (
 				8426EF202793FAB500F18B58 /* Soulfully */,
+				8426EF8127941D4100F18B58 /* SoulfullyNetworking */,
 				8426EF372793FAB600F18B58 /* SoulfullyTests */,
 				8426EF412793FAB600F18B58 /* SoulfullyUITests */,
 				8426EF1F2793FAB500F18B58 /* Products */,
+				6B9C1C065BCBB3E20C3BF677 /* Pods */,
+				4A0EF9E6C0ADA6A06D6085D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +179,7 @@
 				8426EF1E2793FAB500F18B58 /* Soulfully.app */,
 				8426EF342793FAB600F18B58 /* SoulfullyTests.xctest */,
 				8426EF3E2793FAB600F18B58 /* SoulfullyUITests.xctest */,
+				8426EF8027941D4100F18B58 /* SoulfullyNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,22 +214,134 @@
 			path = SoulfullyUITests;
 			sourceTree = "<group>";
 		};
+		8426EF8127941D4100F18B58 /* SoulfullyNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF8227941D4100F18B58 /* SoulfullyNetworking.h */,
+				8426EF8D27941E4C00F18B58 /* Networking */,
+			);
+			path = SoulfullyNetworking;
+			sourceTree = "<group>";
+		};
+		8426EF8D27941E4C00F18B58 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF8E27941E4C00F18B58 /* Logger */,
+				8426EF9027941E4C00F18B58 /* Configable */,
+				8426EF9227941E4C00F18B58 /* KSTNetworkProvider.swift */,
+				8426EF9327941E4C00F18B58 /* Requestable */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8426EF8E27941E4C00F18B58 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF8F27941E4C00F18B58 /* NeoNetworkingLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		8426EF9027941E4C00F18B58 /* Configable */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9127941E4C00F18B58 /* APIConfigable.swift */,
+			);
+			path = Configable;
+			sourceTree = "<group>";
+		};
+		8426EF9327941E4C00F18B58 /* Requestable */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9427941E4C00F18B58 /* KSTApiInputable */,
+				8426EF9627941E4C00F18B58 /* KSTRequestable.swift */,
+				8426EF9727941E4C00F18B58 /* KSTApiOutputable */,
+				8426EF9C27941E4C00F18B58 /* Implement */,
+			);
+			path = Requestable;
+			sourceTree = "<group>";
+		};
+		8426EF9427941E4C00F18B58 /* KSTApiInputable */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9527941E4C00F18B58 /* KSTApiInputable.swift */,
+			);
+			path = KSTApiInputable;
+			sourceTree = "<group>";
+		};
+		8426EF9727941E4C00F18B58 /* KSTApiOutputable */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9827941E4C00F18B58 /* Parser */,
+				8426EF9B27941E4C00F18B58 /* KSTApiOutputable.swift */,
+			);
+			path = KSTApiOutputable;
+			sourceTree = "<group>";
+		};
+		8426EF9827941E4C00F18B58 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9927941E4C00F18B58 /* DefaultParser */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		8426EF9927941E4C00F18B58 /* DefaultParser */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9A27941E4C00F18B58 /* Parseable.swift */,
+			);
+			path = DefaultParser;
+			sourceTree = "<group>";
+		};
+		8426EF9C27941E4C00F18B58 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */,
+			);
+			path = Implement;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8426EF7B27941D4100F18B58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8426EF8327941D4100F18B58 /* SoulfullyNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		8426EF1D2793FAB500F18B58 /* Soulfully */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8426EF482793FAB600F18B58 /* Build configuration list for PBXNativeTarget "Soulfully" */;
 			buildPhases = (
+				CBA726AE4E523EA2270F238D /* [CP] Check Pods Manifest.lock */,
 				8426EF1A2793FAB500F18B58 /* Sources */,
 				8426EF1B2793FAB500F18B58 /* Frameworks */,
 				8426EF1C2793FAB500F18B58 /* Resources */,
+				8426EF8C27941DF100F18B58 /* Swiftlint */,
+				8426EF8827941D4100F18B58 /* Embed Frameworks */,
+				B684E4EFEF558CDB820785B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8426EF8527941D4100F18B58 /* PBXTargetDependency */,
 			);
 			name = Soulfully;
+			packageProductDependencies = (
+				8426EFA7279423A400F18B58 /* Alamofire */,
+				8426EFAA2794240000F18B58 /* Kingfisher */,
+				8426EFAD2794243500F18B58 /* RxCocoa */,
+				8426EFAF2794243500F18B58 /* RxRelay */,
+				8426EFB12794243500F18B58 /* RxSwift */,
+				8426EFB4279424A900F18B58 /* SnapKit */,
+			);
 			productName = Soulfully;
 			productReference = 8426EF1E2793FAB500F18B58 /* Soulfully.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +382,27 @@
 			productReference = 8426EF3E2793FAB600F18B58 /* SoulfullyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8426EF7F27941D4100F18B58 /* SoulfullyNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8426EF8B27941D4100F18B58 /* Build configuration list for PBXNativeTarget "SoulfullyNetworking" */;
+			buildPhases = (
+				8426EF7B27941D4100F18B58 /* Headers */,
+				8426EF7C27941D4100F18B58 /* Sources */,
+				8426EF7D27941D4100F18B58 /* Frameworks */,
+				8426EF7E27941D4100F18B58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoulfullyNetworking;
+			packageProductDependencies = (
+				8426EFB62794379000F18B58 /* Alamofire */,
+			);
+			productName = SoulfullyNetworking;
+			productReference = 8426EF8027941D4100F18B58 /* SoulfullyNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +424,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 8426EF1D2793FAB500F18B58;
 					};
+					8426EF7F27941D4100F18B58 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 8426EF192793FAB500F18B58 /* Build configuration list for PBXProject "Soulfully" */;
@@ -212,11 +438,18 @@
 				Base,
 			);
 			mainGroup = 8426EF152793FAB500F18B58;
+			packageReferences = (
+				8426EFA6279423A400F18B58 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8426EFA92794240000F18B58 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8426EFAC2794243500F18B58 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				8426EFB3279424A900F18B58 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8426EF1F2793FAB500F18B58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8426EF1D2793FAB500F18B58 /* Soulfully */,
+				8426EF7F27941D4100F18B58 /* SoulfullyNetworking */,
 				8426EF332793FAB600F18B58 /* SoulfullyTests */,
 				8426EF3D2793FAB600F18B58 /* SoulfullyUITests */,
 			);
@@ -248,7 +481,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8426EF7E27941D4100F18B58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8426EF8C27941DF100F18B58 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		B684E4EFEF558CDB820785B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Soulfully/Pods-Soulfully-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Soulfully/Pods-Soulfully-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Soulfully/Pods-Soulfully-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBA726AE4E523EA2270F238D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Soulfully-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8426EF1A2793FAB500F18B58 /* Sources */ = {
@@ -277,6 +577,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8426EF7C27941D4100F18B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8426EFA127941E4C00F18B58 /* KSTApiInputable.swift in Sources */,
+				8426EFA427941E4C00F18B58 /* KSTApiOutputable.swift in Sources */,
+				8426EF9F27941E4C00F18B58 /* APIConfigable.swift in Sources */,
+				8426EFA527941E4C00F18B58 /* AlamofireRequester.swift in Sources */,
+				8426EF9E27941E4C00F18B58 /* NeoNetworkingLogger.swift in Sources */,
+				8426EFA027941E4C00F18B58 /* KSTNetworkProvider.swift in Sources */,
+				8426EFA227941E4C00F18B58 /* KSTRequestable.swift in Sources */,
+				8426EFA327941E4C00F18B58 /* Parseable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +604,11 @@
 			isa = PBXTargetDependency;
 			target = 8426EF1D2793FAB500F18B58 /* Soulfully */;
 			targetProxy = 8426EF3F2793FAB600F18B58 /* PBXContainerItemProxy */;
+		};
+		8426EF8527941D4100F18B58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8426EF7F27941D4100F18B58 /* SoulfullyNetworking */;
+			targetProxy = 8426EF8427941D4100F18B58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -430,7 +750,9 @@
 		};
 		8426EF492793FAB600F18B58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90AB7529D916E05E88FD482C /* Pods-Soulfully.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,7 +765,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +781,9 @@
 		};
 		8426EF4A2793FAB600F18B58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB241DEFE020CE902171E19 /* Pods-Soulfully.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,7 +796,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,6 +886,68 @@
 			};
 			name = Release;
 		};
+		8426EF8927941D4100F18B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XXGXD5WD8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anvtd.SoulfullyNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8426EF8A27941D4100F18B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XXGXD5WD8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anvtd.SoulfullyNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,7 +987,89 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8426EF8B27941D4100F18B58 /* Build configuration list for PBXNativeTarget "SoulfullyNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8426EF8927941D4100F18B58 /* Debug */,
+				8426EF8A27941D4100F18B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8426EFA6279423A400F18B58 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8426EFA92794240000F18B58 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		8426EFAC2794243500F18B58 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		8426EFB3279424A900F18B58 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8426EFA7279423A400F18B58 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFA6279423A400F18B58 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8426EFAA2794240000F18B58 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFA92794240000F18B58 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		8426EFAD2794243500F18B58 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFAC2794243500F18B58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8426EFAF2794243500F18B58 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFAC2794243500F18B58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		8426EFB12794243500F18B58 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFAC2794243500F18B58 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		8426EFB4279424A900F18B58 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFB3279424A900F18B58 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8426EFB62794379000F18B58 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8426EFA6279423A400F18B58 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8426EF162793FAB500F18B58 /* Project object */;
 }

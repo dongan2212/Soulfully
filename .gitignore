@@ -1,18 +1,59 @@
-# Xcode
+#########################
+# .gitignore file for Xcode4 / OS X Source projects
 #
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-xcuserdata/
-
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
-*.xcscmblueprint
-*.xccheckout
-
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-build/
+# Version 2.0
+# For latest version, see: http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
+#
+# 2013 updates:
+# - fixed the broken "save personal Schemes"
+#
+# NB: if you are storing "built" products, this WILL NOT WORK,
+# and you should use a different .gitignore (or none at all)
+# This file is for SOURCE projects, where there are many extra
+# files that we want to exclude
+#
+#########################
+ 
+#####
+# OS X temporary files that should never be committed
+ 
+.DS_Store
+*.swp
+profile
+ 
+ 
+####
+# Xcode temporary files that should never be committed
+#
+# NB: NIB/XIB files still exist even on Storyboard projects, so we want this...
+ 
+*~.nib
+ 
+ 
+####
+# Xcode build files -
+#
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
+ 
 DerivedData/
-*.moved-aside
+ 
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
+ 
+build/
+ 
+ 
+#####
+# Xcode private settings (window sizes, bookmarks, breakpoints, custom executables, smart groups)
+#
+# This is complicated:
+#
+# SOMETIMES you need to put this file in version control.
+# Apple designed it poorly - if you use "custom executables", they are
+# saved in this file.
+# 99% of projects do NOT use those, so they do NOT want to version control this file.
+# ..but if you're in the 1%, comment out the line "*.pbxuser"
+ 
+## Various settings
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -21,11 +62,15 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+xcuserdata
+
+## Other
+*.moved-aside
+*.xcuserstate
+*.xcworkspace
 
 ## Obj-C/Swift specific
 *.hmap
-
-## App packaging
 *.ipa
 *.dSYM.zip
 *.dSYM
@@ -38,53 +83,37 @@ playground.xcworkspace
 #
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
 .build/
 
-# CocoaPods
+ 
+####
+# Cocoapods: cocoapods.org
 #
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
-
+# Ignoring these files means that whoever uses the code will first have to run:
+# pod install
+# in the App.xcodeproj directory.
+# This ensures the latest dependencies are used.
+Pods/
+ 
+ 
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build/
-
-# Accio dependency management
-Dependencies/
-.accio/
+Carthage/
 
 # fastlane
 #
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
 # For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
 
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
+fastlane/screenshots
 fastlane/test_output
 
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
+# R.swift
+*.generated.swift

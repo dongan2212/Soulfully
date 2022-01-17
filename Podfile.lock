@@ -1,0 +1,32 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManagerSwift (6.5.9)
+  - SkeletonView (1.24.4)
+  - SVProgressHUD (2.2.5)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - IQKeyboardManagerSwift
+  - SkeletonView
+  - SVProgressHUD
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - DZNEmptyDataSet
+    - IQKeyboardManagerSwift
+    - SkeletonView
+    - SVProgressHUD
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  SkeletonView: c8632f212fcce7b7ba742c3d4a5af3596b5fa5ae
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 9f2793c9da9ef30ec139d4efa8f9802793c3329a
+
+COCOAPODS: 1.11.2
