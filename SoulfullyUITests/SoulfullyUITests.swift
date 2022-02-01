@@ -7,6 +7,7 @@
 
 import XCTest
 
+// swiftlint:disable line_length
 class SoulfullyUITests: XCTestCase {
 
     override func setUpWithError() throws {

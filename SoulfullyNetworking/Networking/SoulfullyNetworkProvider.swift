@@ -1,10 +1,10 @@
 public protocol SoulfullyNetworkProviable {
     var observeHeaderStatusCode: ((Int, Error?, Any?) -> Void)? { get set }
     init(with config: APIConfigable, and requester: RequesterProviable?)
-    func load<T: KSTRequestable>(api: T,
-                                 onComplete: @escaping (T) -> Void,
-                                 onRequestError: @escaping (T) -> Void,
-                                 onServerError: @escaping (Error?) -> Void)
+    func load<T: SoulfullyRequestable>(api: T,
+                                       onComplete: @escaping (T) -> Void,
+                                       onRequestError: @escaping (T) -> Void,
+                                       onServerError: @escaping (Error?) -> Void)
 }
 
 public class SoulfullyNetworkProvider: SoulfullyNetworkProviable {
@@ -16,12 +16,12 @@ public class SoulfullyNetworkProvider: SoulfullyNetworkProviable {
         self.config = config
         self.requester = requester ?? AlamofireRequesterProvider()
         if self.config.debugger.enableLog {
-            KSTLogger.logWriter = ConsoleLogger()
+            SoulfullyLogger.logWriter = ConsoleLogger()
         } else {
-            KSTLogger.logWriter = NullLogger()
+            SoulfullyLogger.logWriter = NullLogger()
         }
         
-        KSTLogger.write(log: """
+        SoulfullyLogger.write(log: """
             \n--------------*****---------------------------------
             Starting Api service
             ||    - API host: \(self.config.host)
@@ -29,11 +29,11 @@ public class SoulfullyNetworkProvider: SoulfullyNetworkProviable {
             --------------*****---------------------------------
             """)
     }
-    public func load<T: KSTRequestable>(api: T,
-                                        onComplete: @escaping (T) -> Void,
-                                        onRequestError: @escaping (T) -> Void,
-                                        onServerError: @escaping (Error?) -> Void) {
-        KSTLogger.write(log: "API will call: \(type(of: api.input))", logLevel: .warning)
+    public func load<T: SoulfullyRequestable>(api: T,
+                                              onComplete: @escaping (T) -> Void,
+                                              onRequestError: @escaping (T) -> Void,
+                                              onServerError: @escaping (Error?) -> Void) {
+        SoulfullyLogger.write(log: "API will call: \(type(of: api.input))", logLevel: .warning)
         print("DEBUG - API body: \(api.input.makeRequestableBody())")
         api.excute(with: self.config,
                    and: self.requester) {[weak self] _, _, statusCode in

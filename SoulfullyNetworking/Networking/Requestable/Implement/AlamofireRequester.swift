@@ -2,23 +2,23 @@ import Alamofire
 
 public protocol RequesterProviable {
     func makeRequest(path: String,
-                     requestType: KSTRequestType,
+                     requestType: SoulfullyRequestType,
                      headers: [String: String],
                      params: [String: Any],
-                     complete: @escaping (KSTApiResponse) -> Void)
+                     complete: @escaping (SoulfullyApiResponse) -> Void)
     func makeFormDataRequest(path: String,
-                             requestType: KSTRequestType,
+                             requestType: SoulfullyRequestType,
                              headers: [String: String],
                              params: [String: Any],
-                             complete: @escaping (KSTApiResponse) -> Void)
+                             complete: @escaping (SoulfullyApiResponse) -> Void)
 }
 
 public class AlamofireRequesterProvider: RequesterProviable {
     public func makeRequest(path: String,
-                            requestType: KSTRequestType,
+                            requestType: SoulfullyRequestType,
                             headers: [String: String],
                             params: [String: Any],
-                            complete: @escaping (KSTApiResponse) -> Void) {
+                            complete: @escaping (SoulfullyApiResponse) -> Void) {
         AF.request(path,
                    method: HTTPMethod(rawValue: requestType.rawValue) ,
                    parameters: params,
@@ -29,10 +29,10 @@ public class AlamofireRequesterProvider: RequesterProviable {
         }
     }
     public func makeFormDataRequest(path: String,
-                                    requestType: KSTRequestType,
+                                    requestType: SoulfullyRequestType,
                                     headers: [String: String],
                                     params: [String: Any],
-                                    complete: @escaping (KSTApiResponse) -> Void) {
+                                    complete: @escaping (SoulfullyApiResponse) -> Void) {
         debugPrint("requestType:\(requestType)")
         AF.upload(
             multipartFormData: { formData in
@@ -43,9 +43,15 @@ public class AlamofireRequesterProvider: RequesterProviable {
                     }
                     if let fileData = param.value as? Data {
                         if path.contains("video") {
-                            formData.append(fileData, withName: param.key, fileName: "upload_video.mov", mimeType: "video/mov")
+                            formData.append(fileData,
+                                            withName: param.key,
+                                            fileName: "upload_video.mov",
+                                            mimeType: "video/mov")
                         } else {
-                            formData.append(fileData, withName: param.key, fileName: "upload_image.png", mimeType: "image/png")
+                            formData.append(fileData,
+                                            withName: param.key,
+                                            fileName: "upload_image.png",
+                                            mimeType: "image/png")
                         }
                     }
                     if let array = param.value as? [String] {
@@ -60,12 +66,10 @@ public class AlamofireRequesterProvider: RequesterProviable {
             method: HTTPMethod(rawValue: requestType.rawValue),
             headers: HTTPHeaders(headers)
         ).responseJSON { (response) in
-            debugPrint("response:\(response)")
             if let dataConcrete = response.data {
-                KSTLogger.write(log: "[Error]: \(String(decoding: dataConcrete, as: UTF8.self))",
+                SoulfullyLogger.write(log: "[Error]: \(String(decoding: dataConcrete, as: UTF8.self))",
                                 logLevel: .error)
             }
-            debugPrint("statusCode:\(response.response?.statusCode)")
             complete((response.data, response.error, response.response?.statusCode ?? 200))
         }
     }

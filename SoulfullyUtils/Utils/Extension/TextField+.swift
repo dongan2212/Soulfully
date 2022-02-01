@@ -79,28 +79,7 @@ extension UITextField {
         
         self.inputAccessoryView = doneToolbar
     }
-    
-    func showDatePicker(target: Any, doneAction: Selector) {
-        // Create a UIDatePicker object and assign to inputView
-        let screenWidth = UIScreen.main.bounds.width
-        let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 215))
-        datePicker.datePickerMode = .date
-        datePicker.maximumDate = Date()
-        if #available(iOS 13.4, *) {
-            datePicker.preferredDatePickerStyle = .wheels
-        }
-        self.inputView = datePicker
         
-        // Create a toolbar and assign it to inputAccessoryView
-        let toolBar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: screenWidth, height: 44.0))
-        let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: nil, action: #selector(cancelAction))
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: target, action: doneAction)
-//        [cancelButton, doneButton].forEach({ $0.tintColor = UserManager.shared.appConfiguration.appTheme.primaryTextColor })
-        toolBar.setItems([cancelButton, flexible, doneButton], animated: false)
-        self.inputAccessoryView = toolBar
-    }
-    
     @objc func doneAction() {
         self.resignFirstResponder()
     }

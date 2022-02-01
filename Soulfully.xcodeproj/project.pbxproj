@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8426EF222793FAB500F18B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF212793FAB500F18B58 /* AppDelegate.swift */; };
-		8426EF262793FAB500F18B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF252793FAB500F18B58 /* ViewController.swift */; };
-		8426EF292793FAB500F18B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426EF272793FAB500F18B58 /* Main.storyboard */; };
 		8426EF2B2793FAB600F18B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8426EF2A2793FAB600F18B58 /* Assets.xcassets */; };
 		8426EF2E2793FAB600F18B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426EF2C2793FAB600F18B58 /* LaunchScreen.storyboard */; };
 		8426EF392793FAB600F18B58 /* SoulfullyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF382793FAB600F18B58 /* SoulfullyTests.swift */; };
@@ -21,10 +19,10 @@
 		8426EF9E27941E4C00F18B58 /* NeoNetworkingLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF8F27941E4C00F18B58 /* NeoNetworkingLogger.swift */; };
 		8426EF9F27941E4C00F18B58 /* APIConfigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9127941E4C00F18B58 /* APIConfigable.swift */; };
 		8426EFA027941E4C00F18B58 /* SoulfullyNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9227941E4C00F18B58 /* SoulfullyNetworkProvider.swift */; };
-		8426EFA127941E4C00F18B58 /* KSTApiInputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9527941E4C00F18B58 /* KSTApiInputable.swift */; };
-		8426EFA227941E4C00F18B58 /* KSTRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9627941E4C00F18B58 /* KSTRequestable.swift */; };
+		8426EFA127941E4C00F18B58 /* SoulfullyApiInputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9527941E4C00F18B58 /* SoulfullyApiInputable.swift */; };
+		8426EFA227941E4C00F18B58 /* SoulfullyRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9627941E4C00F18B58 /* SoulfullyRequestable.swift */; };
 		8426EFA327941E4C00F18B58 /* Parseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9A27941E4C00F18B58 /* Parseable.swift */; };
-		8426EFA427941E4C00F18B58 /* KSTApiOutputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9B27941E4C00F18B58 /* KSTApiOutputable.swift */; };
+		8426EFA427941E4C00F18B58 /* SoulfullyApiOutputable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9B27941E4C00F18B58 /* SoulfullyApiOutputable.swift */; };
 		8426EFA527941E4C00F18B58 /* AlamofireRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */; };
 		8426EFA8279423A400F18B58 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFA7279423A400F18B58 /* Alamofire */; };
 		8426EFAB2794240000F18B58 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFAA2794240000F18B58 /* Kingfisher */; };
@@ -33,6 +31,8 @@
 		8426EFB22794243500F18B58 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB12794243500F18B58 /* RxSwift */; };
 		8426EFB5279424A900F18B58 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB4279424A900F18B58 /* SnapKit */; };
 		8426EFB72794379000F18B58 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB62794379000F18B58 /* Alamofire */; };
+		844E4E3527A85D1E0013CAD2 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E4E3427A85D1E0013CAD2 /* AppDefine.swift */; };
+		844E4E3727A860670013CAD2 /* ColorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E4E3627A860670013CAD2 /* ColorDefine.swift */; };
 		8487094327A16FD000D64653 /* SoulfullyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8487094227A16FD000D64653 /* SoulfullyUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8487094627A16FD000D64653 /* SoulfullyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8487094027A16FD000D64653 /* SoulfullyUtils.framework */; };
 		8487094727A16FD000D64653 /* SoulfullyUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8487094027A16FD000D64653 /* SoulfullyUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -102,6 +102,11 @@
 		84870A4127A178B800D64653 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 84870A4027A178B800D64653 /* Kingfisher */; };
 		84870A4327A17A6100D64653 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84870A4227A17A6100D64653 /* SnapKit */; };
 		84870A4527A17BF600D64653 /* Float+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870A4427A17BF600D64653 /* Float+.swift */; };
+		84870A5127A4076C00D64653 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870A4F27A4076C00D64653 /* BaseViewController.swift */; };
+		84870A5227A4076C00D64653 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870A5027A4076C00D64653 /* BaseView.swift */; };
+		84870A5927A4081200D64653 /* Navigateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870A5627A4081200D64653 /* Navigateable.swift */; };
+		84870A5A27A4081200D64653 /* ViewKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870A5727A4081200D64653 /* ViewKey.swift */; };
+		84870A5B27A4081200D64653 /* Destinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84870A5827A4081200D64653 /* Destinating.swift */; };
 		DCD5123482C215CBAE0468A0 /* Pods_Soulfully.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F7BAB3D1AEE2F9FACEC27A /* Pods_Soulfully.framework */; };
 /* End PBXBuildFile section */
 
@@ -155,8 +160,6 @@
 		05F7BAB3D1AEE2F9FACEC27A /* Pods_Soulfully.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soulfully.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426EF1E2793FAB500F18B58 /* Soulfully.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soulfully.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426EF212793FAB500F18B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8426EF252793FAB500F18B58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8426EF282793FAB500F18B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8426EF2A2793FAB600F18B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8426EF2D2793FAB600F18B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8426EF2F2793FAB600F18B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,11 +173,13 @@
 		8426EF8F27941E4C00F18B58 /* NeoNetworkingLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoNetworkingLogger.swift; sourceTree = "<group>"; };
 		8426EF9127941E4C00F18B58 /* APIConfigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfigable.swift; sourceTree = "<group>"; };
 		8426EF9227941E4C00F18B58 /* SoulfullyNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoulfullyNetworkProvider.swift; sourceTree = "<group>"; };
-		8426EF9527941E4C00F18B58 /* KSTApiInputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTApiInputable.swift; sourceTree = "<group>"; };
-		8426EF9627941E4C00F18B58 /* KSTRequestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTRequestable.swift; sourceTree = "<group>"; };
+		8426EF9527941E4C00F18B58 /* SoulfullyApiInputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoulfullyApiInputable.swift; sourceTree = "<group>"; };
+		8426EF9627941E4C00F18B58 /* SoulfullyRequestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoulfullyRequestable.swift; sourceTree = "<group>"; };
 		8426EF9A27941E4C00F18B58 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
-		8426EF9B27941E4C00F18B58 /* KSTApiOutputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSTApiOutputable.swift; sourceTree = "<group>"; };
+		8426EF9B27941E4C00F18B58 /* SoulfullyApiOutputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoulfullyApiOutputable.swift; sourceTree = "<group>"; };
 		8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRequester.swift; sourceTree = "<group>"; };
+		844E4E3427A85D1E0013CAD2 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
+		844E4E3627A860670013CAD2 /* ColorDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefine.swift; sourceTree = "<group>"; };
 		8487094027A16FD000D64653 /* SoulfullyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoulfullyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8487094227A16FD000D64653 /* SoulfullyUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoulfullyUtils.h; sourceTree = "<group>"; };
 		8487095427A1702000D64653 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -236,6 +241,11 @@
 		848709C327A1702000D64653 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		848709C427A1702000D64653 /* TaskQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskQueue.swift; sourceTree = "<group>"; };
 		84870A4427A17BF600D64653 /* Float+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+.swift"; sourceTree = "<group>"; };
+		84870A4F27A4076C00D64653 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84870A5027A4076C00D64653 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		84870A5627A4081200D64653 /* Navigateable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigateable.swift; sourceTree = "<group>"; };
+		84870A5727A4081200D64653 /* ViewKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewKey.swift; sourceTree = "<group>"; };
+		84870A5827A4081200D64653 /* Destinating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destinating.swift; sourceTree = "<group>"; };
 		A4B5E4DAD56CA1B7564134CC /* Pods-Soulfully.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soulfully.release.xcconfig"; path = "Target Support Files/Pods-Soulfully/Pods-Soulfully.release.xcconfig"; sourceTree = "<group>"; };
 		FD069D3464AE5F91EADDC9FF /* Pods-Soulfully.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soulfully.debug.xcconfig"; path = "Target Support Files/Pods-Soulfully/Pods-Soulfully.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,8 +319,8 @@
 			isa = PBXGroup;
 			children = (
 				8426EF202793FAB500F18B58 /* Soulfully */,
-				8426EF8127941D4100F18B58 /* SoulfullyNetworking */,
 				8487094127A16FD000D64653 /* SoulfullyUtils */,
+				8426EF8127941D4100F18B58 /* SoulfullyNetworking */,
 				8426EF372793FAB600F18B58 /* SoulfullyTests */,
 				8426EF412793FAB600F18B58 /* SoulfullyUITests */,
 				8426EF1F2793FAB500F18B58 /* Products */,
@@ -334,20 +344,16 @@
 		8426EF202793FAB500F18B58 /* Soulfully */ = {
 			isa = PBXGroup;
 			children = (
+				8426EF212793FAB500F18B58 /* AppDelegate.swift */,
+				8487093927A16F5A00D64653 /* Configuration */,
 				84870A3227A171B100D64653 /* Application */,
+				84870A2F27A1715100D64653 /* Resource */,
+				84870A4E27A4074B00D64653 /* Common */,
+				8487093827A16F5000D64653 /* Entity */,
 				84870A3127A1716700D64653 /* UseCase */,
 				84870A3027A1716000D64653 /* Service */,
-				84870A2F27A1715100D64653 /* Resource */,
 				84870A2E27A1714900D64653 /* Storyboard */,
-				84870A2D27A1713800D64653 /* Screen */,
-				8487093927A16F5A00D64653 /* Configuration */,
-				8487093827A16F5000D64653 /* Entity */,
-				8426EF212793FAB500F18B58 /* AppDelegate.swift */,
-				8426EF252793FAB500F18B58 /* ViewController.swift */,
-				8426EF272793FAB500F18B58 /* Main.storyboard */,
-				8426EF2A2793FAB600F18B58 /* Assets.xcassets */,
-				8426EF2C2793FAB600F18B58 /* LaunchScreen.storyboard */,
-				8426EF2F2793FAB600F18B58 /* Info.plist */,
+				84870A2D27A1713800D64653 /* Interface */,
 			);
 			path = Soulfully;
 			sourceTree = "<group>";
@@ -409,7 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				8426EF9427941E4C00F18B58 /* KSTApiInputable */,
-				8426EF9627941E4C00F18B58 /* KSTRequestable.swift */,
+				8426EF9627941E4C00F18B58 /* SoulfullyRequestable.swift */,
 				8426EF9727941E4C00F18B58 /* KSTApiOutputable */,
 				8426EF9C27941E4C00F18B58 /* Implement */,
 			);
@@ -419,7 +425,7 @@
 		8426EF9427941E4C00F18B58 /* KSTApiInputable */ = {
 			isa = PBXGroup;
 			children = (
-				8426EF9527941E4C00F18B58 /* KSTApiInputable.swift */,
+				8426EF9527941E4C00F18B58 /* SoulfullyApiInputable.swift */,
 			);
 			path = KSTApiInputable;
 			sourceTree = "<group>";
@@ -428,7 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				8426EF9827941E4C00F18B58 /* Parser */,
-				8426EF9B27941E4C00F18B58 /* KSTApiOutputable.swift */,
+				8426EF9B27941E4C00F18B58 /* SoulfullyApiOutputable.swift */,
 			);
 			path = KSTApiOutputable;
 			sourceTree = "<group>";
@@ -610,16 +616,19 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		84870A2D27A1713800D64653 /* Screen */ = {
+		84870A2D27A1713800D64653 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				84870A4C27A406DB00D64653 /* Destination */,
+				84870A4D27A406E400D64653 /* Scene */,
 			);
-			path = Screen;
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		84870A2E27A1714900D64653 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				8426EF2C2793FAB600F18B58 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -627,6 +636,8 @@
 		84870A2F27A1715100D64653 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				8426EF2F2793FAB600F18B58 /* Info.plist */,
+				8426EF2A2793FAB600F18B58 /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -634,6 +645,11 @@
 		84870A3027A1716000D64653 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				84870A5E27A4086200D64653 /* AppService */,
+				84870A5D27A4085200D64653 /* Loading */,
+				84870A5527A407F400D64653 /* Theme */,
+				84870A5327A407CE00D64653 /* Navigateable */,
+				84870A5427A407DE00D64653 /* API */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -650,6 +666,69 @@
 			children = (
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		84870A4C27A406DB00D64653 /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Destination;
+			sourceTree = "<group>";
+		};
+		84870A4D27A406E400D64653 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		84870A4E27A4074B00D64653 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				844E4E3427A85D1E0013CAD2 /* AppDefine.swift */,
+				844E4E3627A860670013CAD2 /* ColorDefine.swift */,
+				84870A5027A4076C00D64653 /* BaseView.swift */,
+				84870A4F27A4076C00D64653 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84870A5327A407CE00D64653 /* Navigateable */ = {
+			isa = PBXGroup;
+			children = (
+				84870A5827A4081200D64653 /* Destinating.swift */,
+				84870A5627A4081200D64653 /* Navigateable.swift */,
+				84870A5727A4081200D64653 /* ViewKey.swift */,
+			);
+			path = Navigateable;
+			sourceTree = "<group>";
+		};
+		84870A5427A407DE00D64653 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		84870A5527A407F400D64653 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		84870A5D27A4085200D64653 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		84870A5E27A4086200D64653 /* AppService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppService;
 			sourceTree = "<group>";
 		};
 		EC8CEF42A195796A43A1BCF1 /* Frameworks */ = {
@@ -862,7 +941,6 @@
 			files = (
 				8426EF2E2793FAB600F18B58 /* LaunchScreen.storyboard in Resources */,
 				8426EF2B2793FAB600F18B58 /* Assets.xcassets in Resources */,
-				8426EF292793FAB500F18B58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,8 +1039,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8426EF262793FAB500F18B58 /* ViewController.swift in Sources */,
+				84870A5927A4081200D64653 /* Navigateable.swift in Sources */,
+				84870A5227A4076C00D64653 /* BaseView.swift in Sources */,
+				84870A5A27A4081200D64653 /* ViewKey.swift in Sources */,
 				8426EF222793FAB500F18B58 /* AppDelegate.swift in Sources */,
+				84870A5B27A4081200D64653 /* Destinating.swift in Sources */,
+				84870A5127A4076C00D64653 /* BaseViewController.swift in Sources */,
+				844E4E3727A860670013CAD2 /* ColorDefine.swift in Sources */,
+				844E4E3527A85D1E0013CAD2 /* AppDefine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,13 +1071,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8426EFA127941E4C00F18B58 /* KSTApiInputable.swift in Sources */,
-				8426EFA427941E4C00F18B58 /* KSTApiOutputable.swift in Sources */,
+				8426EFA127941E4C00F18B58 /* SoulfullyApiInputable.swift in Sources */,
+				8426EFA427941E4C00F18B58 /* SoulfullyApiOutputable.swift in Sources */,
 				8426EF9F27941E4C00F18B58 /* APIConfigable.swift in Sources */,
 				8426EFA527941E4C00F18B58 /* AlamofireRequester.swift in Sources */,
 				8426EF9E27941E4C00F18B58 /* NeoNetworkingLogger.swift in Sources */,
 				8426EFA027941E4C00F18B58 /* SoulfullyNetworkProvider.swift in Sources */,
-				8426EFA227941E4C00F18B58 /* KSTRequestable.swift in Sources */,
+				8426EFA227941E4C00F18B58 /* SoulfullyRequestable.swift in Sources */,
 				8426EFA327941E4C00F18B58 /* Parseable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1090,14 +1174,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8426EF272793FAB500F18B58 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8426EF282793FAB500F18B58 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8426EF2C2793FAB600F18B58 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1236,10 +1312,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XXGXD5WD8N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Soulfully/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Soulfully/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1267,10 +1343,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XXGXD5WD8N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Soulfully/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Soulfully/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

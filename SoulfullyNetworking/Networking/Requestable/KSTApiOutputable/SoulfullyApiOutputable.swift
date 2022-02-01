@@ -1,4 +1,4 @@
-public protocol KSTApiOutputable: AnyObject {
+public protocol SoulfullyApiOutputable: AnyObject {
   associatedtype ResultType
   associatedtype ErrorType
   var responseParser: Parseable { get set }
@@ -12,7 +12,7 @@ public protocol KSTApiOutputable: AnyObject {
 struct AssociatedKeys {
   static var errorServer: UInt8 = 0
 }
-public extension KSTApiOutputable {
+public extension SoulfullyApiOutputable {
   private(set) var errorServerInfomation: Error? {
     get {
       guard let value = objc_getAssociatedObject(self, &AssociatedKeys.errorServer) as? Error else {

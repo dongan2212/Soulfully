@@ -1,4 +1,4 @@
-public enum KSTRequestType: String {
+public enum SoulfullyRequestType: String {
     case get = "GET"
     case post = "POST"
     case delete = "DELETE"
@@ -17,8 +17,8 @@ public enum BodyEncode {
  - pathToApi: The leading path to API, normally the path is https://somehost.com/api/somepath/somepath
  and the value of it is /somepath/domepath
  */
-public protocol KSTApiInputable {
-    var requestType: KSTRequestType { get }
+public protocol SoulfullyApiInputable {
+    var requestType: SoulfullyRequestType { get }
     var pathToApi: String { get }
     /* [makeFullPathToApi(:)] :This function will create the full api path to server,
      Some value is common and it put inside the configuration class
@@ -49,7 +49,7 @@ public protocol KSTApiInputable {
     */
     func shouldBroadcastStatusCode() -> Bool
 }
-extension KSTApiInputable {
+extension SoulfullyApiInputable {
     public func getBodyEncode() -> BodyEncode {
         return .json
     }

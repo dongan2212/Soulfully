@@ -8,37 +8,37 @@
 
 import UIKit
 
-extension Optional where Wrapped == String {
+public extension Optional where Wrapped == String {
     func ignoreNil() -> String {
         self ?? ""
     }
 }
 
-extension Optional where Wrapped == Int {
+public extension Optional where Wrapped == Int {
     func ignoreNil() -> Int {
         self ?? 0
     }
 }
 
-extension Optional where Wrapped == Double {
+public extension Optional where Wrapped == Double {
     func ignoreNil() -> Double {
         self ?? 0.0
     }
 }
 
-extension Optional where Wrapped == Bool {
+public extension Optional where Wrapped == Bool {
     func ignoreNil() -> Bool {
         self ?? false
     }
 }
 
-extension Optional where Wrapped == UIColor {
+public extension Optional where Wrapped == UIColor {
     func ignoreNil() -> UIColor {
         self ?? .black
     }
 }
 
-extension Optional where Wrapped == UIImage {
+public extension Optional where Wrapped == UIImage {
     func ignoreNil() -> UIImage {
         self ?? .init()
     }
