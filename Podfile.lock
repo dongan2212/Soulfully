@@ -2,6 +2,7 @@ PODS:
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManagerSwift (6.5.9)
   - SkeletonView (1.24.4)
+  - SkyFloatingLabelTextField (4.0.0)
   - SVProgressHUD (2.2.5)
   - SwiftLint (0.43.1)
 
@@ -9,6 +10,7 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - IQKeyboardManagerSwift
   - SkeletonView
+  - SkyFloatingLabelTextField
   - SVProgressHUD
   - SwiftLint
 
@@ -17,6 +19,7 @@ SPEC REPOS:
     - DZNEmptyDataSet
     - IQKeyboardManagerSwift
     - SkeletonView
+    - SkyFloatingLabelTextField
     - SVProgressHUD
     - SwiftLint
 
@@ -24,9 +27,10 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   SkeletonView: c8632f212fcce7b7ba742c3d4a5af3596b5fa5ae
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 9f2793c9da9ef30ec139d4efa8f9802793c3329a
+PODFILE CHECKSUM: 7d371e00152851c0b419d59fb2b4cf4d41cd439f
 
 COCOAPODS: 1.11.2

@@ -31,8 +31,24 @@
 		8426EFB22794243500F18B58 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB12794243500F18B58 /* RxSwift */; };
 		8426EFB5279424A900F18B58 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB4279424A900F18B58 /* SnapKit */; };
 		8426EFB72794379000F18B58 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8426EFB62794379000F18B58 /* Alamofire */; };
+		8440E75D27BE5E9C001707D8 /* SignInUpInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E75C27BE5E9C001707D8 /* SignInUpInfoView.swift */; };
+		8440E76027BE6357001707D8 /* SocialSignInUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440E75F27BE6357001707D8 /* SocialSignInUpView.xib */; };
+		8440E76227BE636F001707D8 /* SocialSignInUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E76127BE636F001707D8 /* SocialSignInUpView.swift */; };
+		8440E76627BEE756001707D8 /* DashboardTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440E76427BEE756001707D8 /* DashboardTabBarController.xib */; };
+		8440E76727BEE756001707D8 /* DashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E76527BEE756001707D8 /* DashboardTabBarController.swift */; };
+		8440E76927BEE7EB001707D8 /* HomeDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E76827BEE7EB001707D8 /* HomeDestination.swift */; };
+		8440E76B27BEE7F9001707D8 /* DiscoverDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E76A27BEE7F9001707D8 /* DiscoverDestination.swift */; };
+		8440E76D27BEE844001707D8 /* ProfileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E76C27BEE844001707D8 /* ProfileDestination.swift */; };
+		8440E77327BEE8D5001707D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77127BEE8D5001707D8 /* HomeViewController.swift */; };
+		8440E77427BEE8D5001707D8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440E77227BEE8D5001707D8 /* HomeViewController.xib */; };
+		8440E77627BEE8DF001707D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77527BEE8DF001707D8 /* HomeViewModel.swift */; };
+		8440E77827BEE92C001707D8 /* ViewModelTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77727BEE92C001707D8 /* ViewModelTransformable.swift */; };
+		8440E77A27BEE98D001707D8 /* AppErrorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77927BEE98D001707D8 /* AppErrorDefine.swift */; };
+		8440E77C27BF3808001707D8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440E77B27BF3808001707D8 /* ActivityIndicator.swift */; };
 		844E4E3527A85D1E0013CAD2 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E4E3427A85D1E0013CAD2 /* AppDefine.swift */; };
 		844E4E3727A860670013CAD2 /* ColorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E4E3627A860670013CAD2 /* ColorDefine.swift */; };
+		845A941E27BAA07200A21998 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A941D27BAA07200A21998 /* Login.storyboard */; };
+		845A942227BB40FB00A21998 /* SignInUpLoginInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A942127BB40FB00A21998 /* SignInUpLoginInfoView.xib */; };
 		8487094327A16FD000D64653 /* SoulfullyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8487094227A16FD000D64653 /* SoulfullyUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8487094627A16FD000D64653 /* SoulfullyUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8487094027A16FD000D64653 /* SoulfullyUtils.framework */; };
 		8487094727A16FD000D64653 /* SoulfullyUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8487094027A16FD000D64653 /* SoulfullyUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -178,8 +194,24 @@
 		8426EF9A27941E4C00F18B58 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
 		8426EF9B27941E4C00F18B58 /* SoulfullyApiOutputable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoulfullyApiOutputable.swift; sourceTree = "<group>"; };
 		8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRequester.swift; sourceTree = "<group>"; };
+		8440E75C27BE5E9C001707D8 /* SignInUpInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUpInfoView.swift; sourceTree = "<group>"; };
+		8440E75F27BE6357001707D8 /* SocialSignInUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialSignInUpView.xib; sourceTree = "<group>"; };
+		8440E76127BE636F001707D8 /* SocialSignInUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignInUpView.swift; sourceTree = "<group>"; };
+		8440E76427BEE756001707D8 /* DashboardTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardTabBarController.xib; sourceTree = "<group>"; };
+		8440E76527BEE756001707D8 /* DashboardTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTabBarController.swift; sourceTree = "<group>"; };
+		8440E76827BEE7EB001707D8 /* HomeDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDestination.swift; sourceTree = "<group>"; };
+		8440E76A27BEE7F9001707D8 /* DiscoverDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDestination.swift; sourceTree = "<group>"; };
+		8440E76C27BEE844001707D8 /* ProfileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDestination.swift; sourceTree = "<group>"; };
+		8440E77127BEE8D5001707D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8440E77227BEE8D5001707D8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8440E77527BEE8DF001707D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8440E77727BEE92C001707D8 /* ViewModelTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelTransformable.swift; sourceTree = "<group>"; };
+		8440E77927BEE98D001707D8 /* AppErrorDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrorDefine.swift; sourceTree = "<group>"; };
+		8440E77B27BF3808001707D8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		844E4E3427A85D1E0013CAD2 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
 		844E4E3627A860670013CAD2 /* ColorDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefine.swift; sourceTree = "<group>"; };
+		845A941D27BAA07200A21998 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		845A942127BB40FB00A21998 /* SignInUpLoginInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInUpLoginInfoView.xib; sourceTree = "<group>"; };
 		8487094027A16FD000D64653 /* SoulfullyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoulfullyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8487094227A16FD000D64653 /* SoulfullyUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoulfullyUtils.h; sourceTree = "<group>"; };
 		8487095427A1702000D64653 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -345,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				8426EF212793FAB500F18B58 /* AppDelegate.swift */,
+				845A942927BE323800A21998 /* Constant */,
 				8487093927A16F5A00D64653 /* Configuration */,
 				84870A3227A171B100D64653 /* Application */,
 				84870A2F27A1715100D64653 /* Resource */,
@@ -461,6 +494,76 @@
 				8426EF9D27941E4C00F18B58 /* AlamofireRequester.swift */,
 			);
 			path = Implement;
+			sourceTree = "<group>";
+		};
+		8440E75E27BE633A001707D8 /* SocialSignInUpView */ = {
+			isa = PBXGroup;
+			children = (
+				8440E75F27BE6357001707D8 /* SocialSignInUpView.xib */,
+				8440E76127BE636F001707D8 /* SocialSignInUpView.swift */,
+			);
+			path = SocialSignInUpView;
+			sourceTree = "<group>";
+		};
+		8440E76327BEE756001707D8 /* DashboardTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8440E76427BEE756001707D8 /* DashboardTabBarController.xib */,
+				8440E76527BEE756001707D8 /* DashboardTabBarController.swift */,
+			);
+			path = DashboardTabBar;
+			sourceTree = "<group>";
+		};
+		8440E76E27BEE8AF001707D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8440E77127BEE8D5001707D8 /* HomeViewController.swift */,
+				8440E77227BEE8D5001707D8 /* HomeViewController.xib */,
+				8440E77527BEE8DF001707D8 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8440E76F27BEE8BA001707D8 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		8440E77027BEE8BF001707D8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		845A941F27BAA3EE00A21998 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				8440E75E27BE633A001707D8 /* SocialSignInUpView */,
+				845A942027BAA45B00A21998 /* SignInUpLoginInfoView */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		845A942027BAA45B00A21998 /* SignInUpLoginInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				845A942127BB40FB00A21998 /* SignInUpLoginInfoView.xib */,
+				8440E75C27BE5E9C001707D8 /* SignInUpInfoView.swift */,
+			);
+			path = SignInUpLoginInfoView;
+			sourceTree = "<group>";
+		};
+		845A942927BE323800A21998 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				844E4E3427A85D1E0013CAD2 /* AppDefine.swift */,
+				844E4E3627A860670013CAD2 /* ColorDefine.swift */,
+				8440E77927BEE98D001707D8 /* AppErrorDefine.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		8487093827A16F5000D64653 /* Entity */ = {
@@ -629,6 +732,7 @@
 			isa = PBXGroup;
 			children = (
 				8426EF2C2793FAB600F18B58 /* LaunchScreen.storyboard */,
+				845A941D27BAA07200A21998 /* Login.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -671,6 +775,9 @@
 		84870A4C27A406DB00D64653 /* Destination */ = {
 			isa = PBXGroup;
 			children = (
+				8440E76827BEE7EB001707D8 /* HomeDestination.swift */,
+				8440E76A27BEE7F9001707D8 /* DiscoverDestination.swift */,
+				8440E76C27BEE844001707D8 /* ProfileDestination.swift */,
 			);
 			path = Destination;
 			sourceTree = "<group>";
@@ -678,6 +785,10 @@
 		84870A4D27A406E400D64653 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				8440E76327BEE756001707D8 /* DashboardTabBar */,
+				8440E76E27BEE8AF001707D8 /* Home */,
+				8440E77027BEE8BF001707D8 /* Profile */,
+				8440E76F27BEE8BA001707D8 /* Discover */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -685,10 +796,11 @@
 		84870A4E27A4074B00D64653 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				844E4E3427A85D1E0013CAD2 /* AppDefine.swift */,
-				844E4E3627A860670013CAD2 /* ColorDefine.swift */,
+				845A941F27BAA3EE00A21998 /* CustomView */,
 				84870A5027A4076C00D64653 /* BaseView.swift */,
 				84870A4F27A4076C00D64653 /* BaseViewController.swift */,
+				8440E77727BEE92C001707D8 /* ViewModelTransformable.swift */,
+				8440E77B27BF3808001707D8 /* ActivityIndicator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -939,8 +1051,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8440E76627BEE756001707D8 /* DashboardTabBarController.xib in Resources */,
 				8426EF2E2793FAB600F18B58 /* LaunchScreen.storyboard in Resources */,
 				8426EF2B2793FAB600F18B58 /* Assets.xcassets in Resources */,
+				8440E76027BE6357001707D8 /* SocialSignInUpView.xib in Resources */,
+				845A942227BB40FB00A21998 /* SignInUpLoginInfoView.xib in Resources */,
+				8440E77427BEE8D5001707D8 /* HomeViewController.xib in Resources */,
+				845A941E27BAA07200A21998 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,14 +1156,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8440E76D27BEE844001707D8 /* ProfileDestination.swift in Sources */,
+				8440E76727BEE756001707D8 /* DashboardTabBarController.swift in Sources */,
+				8440E77C27BF3808001707D8 /* ActivityIndicator.swift in Sources */,
 				84870A5927A4081200D64653 /* Navigateable.swift in Sources */,
+				8440E77627BEE8DF001707D8 /* HomeViewModel.swift in Sources */,
 				84870A5227A4076C00D64653 /* BaseView.swift in Sources */,
+				8440E76B27BEE7F9001707D8 /* DiscoverDestination.swift in Sources */,
+				8440E77327BEE8D5001707D8 /* HomeViewController.swift in Sources */,
+				8440E77A27BEE98D001707D8 /* AppErrorDefine.swift in Sources */,
+				8440E76927BEE7EB001707D8 /* HomeDestination.swift in Sources */,
+				8440E75D27BE5E9C001707D8 /* SignInUpInfoView.swift in Sources */,
 				84870A5A27A4081200D64653 /* ViewKey.swift in Sources */,
 				8426EF222793FAB500F18B58 /* AppDelegate.swift in Sources */,
 				84870A5B27A4081200D64653 /* Destinating.swift in Sources */,
+				8440E77827BEE92C001707D8 /* ViewModelTransformable.swift in Sources */,
 				84870A5127A4076C00D64653 /* BaseViewController.swift in Sources */,
 				844E4E3727A860670013CAD2 /* ColorDefine.swift in Sources */,
 				844E4E3527A85D1E0013CAD2 /* AppDefine.swift in Sources */,
+				8440E76227BE636F001707D8 /* SocialSignInUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

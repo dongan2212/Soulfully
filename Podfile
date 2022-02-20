@@ -7,6 +7,7 @@ def utility
 end
 
 def ui
+  pod 'SkyFloatingLabelTextField'
   pod 'SkeletonView'
   pod 'DZNEmptyDataSet'
   pod 'SVProgressHUD'
